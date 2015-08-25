@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1439346506 source:c:\users\pnc7janelasnote\desktop\8º período\[ssc0143] programação concorrente\trabalhos\t1\trabalho1\matentrada.c
+	<stdio.h>
+	<stdlib.h>
+	"matEntrada.h"
+
+1439344345 c:\users\pnc7janelasnote\desktop\8º período\[ssc0143] programação concorrente\trabalhos\t1\trabalho1\matentrada.h
+
+1439346729 source:c:\users\pnc7janelasnote\desktop\8º período\[ssc0143] programação concorrente\trabalhos\t1\trabalho1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"matEntrada.h"
+	<string.h>
+
