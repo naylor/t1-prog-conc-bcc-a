@@ -12,3 +12,26 @@
 	"matEntrada.h"
 	<string.h>
 
+1440550771 source:c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"matEntrada.h"
+	"interfaces.h"
+
+1440548880 c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\matentrada.h
+
+1440550267 source:c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\matentrada.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"matEntrada.h"
+
+1440550966 source:c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\interfaces.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"interfaces.h"
+
+1440548087 c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\interfaces.h
+
