@@ -35,3 +35,26 @@
 
 1440548087 c:\users\pnc7janelasnote\documents\github\t1-prog-conc-bcc-a\trabalho1\interfaces.h
 
+1441224566 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/t1-prog-conc-bcc-a/Trabalho1/interfaces.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"interfaces.h"
+
+1441224554 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/t1-prog-conc-bcc-a/Trabalho1/interfaces.h
+
+1441224473 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/t1-prog-conc-bcc-a/Trabalho1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"matEntrada.h"
+	"interfaces.h"
+
+1441224602 /media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/t1-prog-conc-bcc-a/Trabalho1/matEntrada.h
+
+1441224629 source:/media/naylor/DADOS/Faculdades/Doutorado - USP/Disciplinas/SSC5795 - Programação Concorrente/Trabalhos/Trabalho 1/t1-prog-conc-bcc-a/Trabalho1/matEntrada.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"matEntrada.h"
+

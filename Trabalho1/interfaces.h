@@ -2,6 +2,12 @@
 #define INTERFACES_H_INCLUDED
 
 char* getCaminhoArquivo(short opcao);
-char* telaInicial(short opInicial);
+struct caminhoTipo telaInicial();
+
+struct caminhoTipo {
+    char* caminho;
+    char tipo;
+    int threads;
+};
 
 #endif // INTERFACES_H_INCLUDED

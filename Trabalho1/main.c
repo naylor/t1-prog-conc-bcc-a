@@ -13,7 +13,7 @@ int main (int argc, char* argv[]){
     short auxShort;
     double auxDouble;
     long auxLong;
-    char* caminhoMat = telaInicial(-1);
+    struct caminhoTipo ct = telaInicial();
     double* resultado = NULL;
     double* x0 = NULL;
 
@@ -22,7 +22,7 @@ int main (int argc, char* argv[]){
     // Cria a estrutura que armazenará as matrizes
     MAT_ENTRADA* m = criarMatEntrada();
 
-    arqMat = fopen(caminhoMat,"r");
+    arqMat = fopen(ct.caminho,"r");
 
     if(arqMat == NULL){
         printf("Erro ao abrir arquivo.");
@@ -67,8 +67,13 @@ int main (int argc, char* argv[]){
     x0[1] = -1.6;
     x0[2] = 0.6;
 
-    prepararMatriez(m);
-    resultado = jacobiRichardson(m,x0);
+
+    if (ct.tipo == 's')
+       resultado = jacobiRichardsonSerial(m,x0);
+
+    if (ct.tipo == 'p')
+       resultado = jacobiRichardsonParalelo(m,x0);
+
     imprimirResultado(resultado,getOrdem(m));
     imprimirInfosMatEntrada(m);
 

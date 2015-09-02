@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "matEntrada.h"
+#include <pthread.h>
 
 // --- Funções de Alocação de Memória ---
 MAT_ENTRADA* criarMatEntrada(){
@@ -185,7 +186,7 @@ void prepararMatriez(MAT_ENTRADA* m){
     free(diagonal);
 }
 
-double* jacobiRichardson(MAT_ENTRADA* m, double *x0){
+double* jacobiRichardsonSerial(MAT_ENTRADA* m, double *x0){
 
     int i, j, k;
     long l;
@@ -230,6 +231,10 @@ double* jacobiRichardson(MAT_ENTRADA* m, double *x0){
 
     inserirRealIt(m,l+1);
     return(xk);
+}
+
+double* jacobiRichardsonParalelo(MAT_ENTRADA* m, double *x0){
+
 }
 
 /*

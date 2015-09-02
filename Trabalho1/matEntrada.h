@@ -52,7 +52,8 @@ void imprimirResultado(double* res, int tam);
 
 // Funções especificas do Método de Jacobi-Richardson
 void prepararMatriez(MAT_ENTRADA* m);
-double* jacobiRichardson(MAT_ENTRADA* m, double *x0);
+double* jacobiRichardsonSerial(MAT_ENTRADA* m, double *x0);
+double* jacobiRichardsonParalelo(MAT_ENTRADA* m, double *x0);
 double calcErro(double *xk, double *xkMaisUm, int tam);
 double calcNormaVetor(double *vet, int tam);
 double* subtracaoVetores(double *vet1, double *vet2, int tam);

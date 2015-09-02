@@ -6,7 +6,7 @@
 char* getCaminhoArquivo(short opcao){
 
     // Caminhos até cada arquivo das matrizes
-    const char caminhoMat250[] = "matrizes/matriz3.txt";
+    const char caminhoMat250[] = "matrizes/matriz250.txt";
     const char caminhoMat500[] = "matrizes/matriz500.txt";
     const char caminhoMat1000[] = "matrizes/matriz1000.txt";
     const char caminhoMat1500[] = "matrizes/matriz1500.txt";
@@ -49,29 +49,37 @@ char* getCaminhoArquivo(short opcao){
     return(caminho);
 }
 
-char* telaInicial(short opInicial){
+struct caminhoTipo telaInicial(){
 
-    short opcao = opInicial;
-    char* caminho = NULL;
+    struct caminhoTipo ct;
+    short caminho;
 
-    if(opcao == -1){
-        printf("\t\tSSC0143 - Programacao Concorrente - Turma A\n");
-        printf("\t\t Trabalho 01 - Metodo de Jacobi-Richardson\n\n");
-        printf("\tAlunos: Fabio Alves Martins Pereira (Num.USP: 7987435)\n\n");
-        printf("\t\t\t\tMenu Principal\n\n");
-        printf("\t1 - Carregar Matriz de 250 elementos\n");
-        printf("\t2 - Carregar Matriz de 500 elementos\n");
-        printf("\t3 - Carregar Matriz de 1000 elementos\n");
-        printf("\t4 - Carregar Matriz de 1500 elementos\n");
-        printf("\t5 - Carregar Matriz de 2000 elementos\n");
-        printf("\t6 - Carregar Matriz de 3000 elementos\n");
-        printf("\t7 - Carregar Matriz de 4000 elementos\n\n");
-        printf("\tEscolha uma opcao: ");
-        scanf("%hd", &opcao);
+    printf("\t\tSSC0143 - Programacao Concorrente - Turma A\n");
+    printf("\t\t Trabalho 01 - Metodo de Jacobi-Richardson\n\n");
+    printf("\tAlunos: Fabio Alves Martins Pereira (Num.USP: 7987435)\n\n");
+    printf("\t\t\t\tMenu Principal\n\n");
+    printf("\t1 - Matriz de 250 elementos\n");
+    printf("\t2 - Matriz de 500 elementos\n");
+    printf("\t3 - Matriz de 1000 elementos\n");
+    printf("\t4 - Matriz de 1500 elementos\n");
+    printf("\t5 - Matriz de 2000 elementos\n");
+    printf("\t6 - Matriz de 3000 elementos\n");
+    printf("\t7 - Matriz de 4000 elementos\n\n");
+    printf("\tEscolha uma matriz: ");
+    scanf("%hd", &caminho);
+    printf("\n");
+    printf("\ts - Serial\n");
+    printf("\tp - Paralelo\n\n");
+    printf("\tEscolha o tipo de execucao: ");
+    scanf(" %c", &ct.tipo);
+    printf("\n");
+    if (ct.tipo == 'p') {
+        printf("\tEscolha o numero de threads: ");
+        scanf(" %c", &ct.threads);
         printf("\n");
     }
 
-    caminho = getCaminhoArquivo(opcao);
+    ct.caminho = getCaminhoArquivo(caminho);
 
-    return(caminho);
+    return(ct);
 }
